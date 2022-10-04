@@ -18,4 +18,12 @@ $(document).ready(function () {
         var newTextInput = $("<input>");
         var newBtn = $("<button>");
 
+        $(".container").append(newDiv);
+        $(".container").addClass("mb-5");
+
+        newDiv.addClass("time-block input-group input-group-prepend");
+        newDiv.attr("data-val", index);
+        newDiv.append(newSpan);
+        newSpan.addClass("input-group-text");
+        newSpan.addClass("start-time");
         
