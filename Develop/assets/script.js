@@ -34,4 +34,27 @@ $(document).ready(function() {
     let clearBtn = $('#clearBtn');
 
     var timeNow = parseInt(moment().format('HH'));
+
+    function clear() {
+        localStorage.clear();
+  
+        box1.val('');
+        box2.val('');
+        box3.val('');
+        box4.val('');
+        box5.val('');
+        box9.val('');
+        box10.val('');
+        box11.val('');
+        box12.val('');
+    }
+  
+    function tick() {
+  
+        dayEl.text(moment().format('LL'));
+        timeEl.text(moment().format('hh:mm:ssA'));
+        $('.jumbotron').append(dayEl);
+        $('.jumbotron').append(timeEl);
+  
+    }
 });
